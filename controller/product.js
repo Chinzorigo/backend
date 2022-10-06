@@ -5,7 +5,7 @@ import {
     insertProduct,
     updateProductById,
     deleteProductById
-} from "../models/ProductModel.js";
+} from "../models/productModel.js";
 
 // get all products
 export const showProducts = (req, res) => {
@@ -20,7 +20,7 @@ export const showProducts = (req, res) => {
 
 // get single product
 
-export const showProductByID = (req, res) => {
+export const showProductById = (req, res) => {
     getProductById(req.params.id, (err, results) => {
         if(err) {
             res.send(err);

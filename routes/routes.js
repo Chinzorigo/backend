@@ -4,7 +4,7 @@ import express from "express";
 // import functions from controller
 import {
     showProducts,
-    showProductByID,
+    showProductById,
     createProduct,
     updateProduct,
     deleteProduct
@@ -17,7 +17,7 @@ const router = express.Router();
 router.get("/products", showProducts);
 
 //get single product
-router.get("/products/:id", showProductByID);
+router.get("/products/:id", showProductById);
 
 //create new product
 router.post("/products/:id", createProduct);
